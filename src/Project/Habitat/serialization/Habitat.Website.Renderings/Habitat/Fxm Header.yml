@@ -1,0 +1,18 @@
+﻿---
+ID: "0e77d23f-484f-4bc4-b284-fc89357d65b8"
+Parent: "5150f78a-0061-4609-9c6c-c5b3bc6d7ebc"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Project/Habitat/Fxm Header
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Website/FXM/FxmHeader.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160810T014055Z

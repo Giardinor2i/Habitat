@@ -1,0 +1,72 @@
+﻿---
+ID: "5c6edd68-07c5-4436-bea2-11961c6eeea2"
+Parent: "e368a8b4-1d4b-4e64-82c8-e5d92659f49a"
+Template: "35a2cd14-a222-47a2-b7d7-7ec1c1eb67c0"
+Path: /sitecore/content/Habitat/Home/FXM/Footer
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{799CE3F9-8324-4779-9B1E-39B628559E41}"
+          p:before="*"
+          s:key="col-narrow-1"
+          s:md="/sitecore/layout/Placeholder Settings/Project/Common/Columns/col-narrow-1" />
+        <r
+          uid="{DD3AF84B-D32E-44C4-B2A5-5AFD2EA61C43}"
+          p:after="p[@uid='{799CE3F9-8324-4779-9B1E-39B628559E41}']"
+          s:ds=""
+          s:id="{8302D93E-0015-4665-B133-FD07468A448D}"
+          s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1"
+          s:ph="ph2" />
+        <r
+          uid="{AD893559-B552-4799-8C7D-1628282D4D6B}"
+          p:after="r[@uid='{DD3AF84B-D32E-44C4-B2A5-5AFD2EA61C43}']"
+          s:ds=""
+          s:id="{299FD8EA-2CFD-4A69-9CA4-7EA24CD34A46}"
+          s:par=""
+          s:ph="footer" />
+        <r
+          uid="{799B965F-D407-4F40-A113-45BD9D2D4632}"
+          p:after="r[@uid='{AD893559-B552-4799-8C7D-1628282D4D6B}']"
+          s:ds=""
+          s:id="{98D6BC34-0185-42A0-B53B-CEB7B17008B6}"
+          s:par="Background&amp;ContainerIsFluid&amp;UseStaticPlaceholderNames=1"
+          s:ph="/ph2/footer/section" />
+        <r
+          uid="{0216AF4D-3908-4DD8-B8DB-EBBD71B5ADA2}"
+          p:after="r[@uid='{799B965F-D407-4F40-A113-45BD9D2D4632}']"
+          s:ds="{FB1E4810-6D89-4F1E-A47B-70478FE32DA7}"
+          s:id="{F366FBA9-EF26-4007-988A-63CB64649C46}"
+          s:par=""
+          s:ph="/ph2/footer/section/col-narrow-1" />
+        <r
+          uid="{42BEFD45-DD2F-48ED-95A2-3B07EF5F1BB2}"
+          p:after="r[@uid='{0216AF4D-3908-4DD8-B8DB-EBBD71B5ADA2}']"
+          s:ds="{B4D87E66-D2C5-4C06-8F9A-08AEAF38055A}"
+          s:id="{F366FBA9-EF26-4007-988A-63CB64649C46}"
+          s:par=""
+          s:ph="/ph2/footer/section/col-narrow-2" />
+        <r
+          uid="{EC1350F2-0AC5-4A4A-B3F2-D44EEE1BAD32}"
+          p:after="*[1=2]"
+          s:ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}"
+          s:id="{781C6B36-4B02-46EA-8ADC-B92A11877F10}"
+          s:par="Background"
+          s:ph="/ph2/footer/section/col-narrow-3" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160809T144713Z

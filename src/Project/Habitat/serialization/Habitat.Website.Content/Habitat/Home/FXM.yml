@@ -1,0 +1,17 @@
+﻿---
+ID: "e368a8b4-1d4b-4e64-82c8-e5d92659f49a"
+Parent: "dac24edd-44fb-42ef-9ecd-1e8daf706386"
+Template: "ab2971a0-3d4a-4201-8eb7-02c9440c8269"
+Path: /sitecore/content/Habitat/Home/FXM
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160810T042258Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
