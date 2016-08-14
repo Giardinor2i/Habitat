@@ -33,7 +33,7 @@
 
         public static string Url(this Item item, UrlOptions options = null)
         {
-            if (options == null && item.InFxm())
+            if (options == null && !item.Paths.IsMediaItem && item.InFxm())
             {
                 options = LinkManager.GetDefaultUrlOptions();
                 options.AlwaysIncludeServerUrl = true;
