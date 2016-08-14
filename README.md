@@ -1,9 +1,9 @@
 Habitat for FXM
 
-This fork of Habitat demonstrates various techniques that can be used to extend Sitecore's FXM capability:
+This fork of Habitat demonstrates various techniques that can be used to extend and simplify Sitecore's FXM capability:
 
-* FXM Item Renderer - A rendering that can be used in a FXM placeholder to render an item with a layout and nested placeholders
-* Prepend CSS Selector Transform - A transform that can be used with the FXM bundling mechanism to prepend a selector to all style rules in the bundle
-* FXM Beacon Events - An example of how to use FXM beacon events as a hook for JavaScript initialization that would normally be accomplished via the document ready event
-* Link Rendering - The Url method of the ItemExtension class is enhanced to provide the correct Url options to the LinkManager when the item is rendering in the context of an FXM placeholder
+* Placeholder Rendering Extension - A rendering that can be used from a FXM placeholder to render an item with a layout and nested placeholders.
+* Prepend CSS Selector Transform - A transform that can be used with the FXM bundling mechanism to prepend a unique selector to all style rules in a bundle, thus isolating them from the styles on the host site.
+* JavaScript Event Handlers - JavaScript event handlers that are normally initialized via the document ready event are extended to accomodate the FXM beacon's ready event.
+* Item Urls - The Url method of the ItemExtension class is enhanced to provide the correct options to the LinkManager when the item is rendering in the context of an FXM placeholder
 
