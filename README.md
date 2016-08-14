@@ -1,7 +1,6 @@
 Habitat for FXM
 
-This fork of Habitat provides a demonstration of several techniques that extend Sitecore's FXM capability.
-The techniques demonstrated are as follows:
+This fork of Habitat demonstrates various techniques that can be used to extend Sitecore's FXM capability:
 
 * FXM Item Renderer - A rendering that can be used in a FXM placeholder to render an item with a layout and nested placeholders
 * Prepend CSS Selector Transform - A transform that can be used with the FXM bundling mechanism to prepend a selector to all style rules in the bundle.  
