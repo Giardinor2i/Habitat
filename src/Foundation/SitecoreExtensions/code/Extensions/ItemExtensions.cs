@@ -196,7 +196,16 @@
             return new HtmlString(FieldRendererService.RenderField(item, fieldId));
         }
 
-        #region Private
+        public static bool InFxm(this Item item)
+        {
+            Item contextitem = Sitecore.Context.Item;
+            if (IsFxmPlaceholder(contextitem))
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         private static Guid FxmPlaceholder = new Guid("{10E23679-55DB-4059-B8F2-E417A2F78FCB}");
 
@@ -211,6 +220,6 @@
             return false;
         }
 
-        #endregion
+      
     }
 }

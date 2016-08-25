@@ -55,11 +55,18 @@ SharedFields:
           s:ph="/ph2/footer/section/col-narrow-2" />
         <r
           uid="{EC1350F2-0AC5-4A4A-B3F2-D44EEE1BAD32}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{42BEFD45-DD2F-48ED-95A2-3B07EF5F1BB2}']"
           s:ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}"
           s:id="{781C6B36-4B02-46EA-8ADC-B92A11877F10}"
           s:par="Background"
           s:ph="/ph2/footer/section/col-narrow-3" />
+        <r
+          uid="{7AB31CB1-C40C-4315-903D-769B39507527}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{7DAE9F23-890F-4E06-99A7-CCEDB74D3D8E}"
+          s:par=""
+          s:ph="/ph2/footer/postfooter" />
       </d>
     </r>
 Languages:
