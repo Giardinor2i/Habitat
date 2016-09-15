@@ -20,6 +20,17 @@
 
     public static class ItemExtensions
     {
+        public static bool InFxm(this Item item)
+        {
+            Item contextitem = Sitecore.Context.Item;
+            if (IsFxmPlaceholder(contextitem))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public static string Url(this Item item, UrlOptions options = null)
         {
             if (options == null && !item.Paths.IsMediaItem && item.InFxm())
