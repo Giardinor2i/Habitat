@@ -58,8 +58,15 @@ SharedFields:
           p:after="r[@uid='{42BEFD45-DD2F-48ED-95A2-3B07EF5F1BB2}']"
           s:ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}"
           s:id="{781C6B36-4B02-46EA-8ADC-B92A11877F10}"
-          s:par="Background"
+          s:par="Background=%7BBD2F308A-E00A-4372-ADBB-BD64712A54FA%7D"
           s:ph="/ph2/footer/section/col-narrow-3" />
+        <r
+          uid="{D96F30FD-1EB3-416A-8003-6F121341AB90}"
+          p:after="r[@uid='{EC1350F2-0AC5-4A4A-B3F2-D44EEE1BAD32}']"
+          s:ds="{98E48045-DFC7-4A70-9BED-5C40AB6558A6}"
+          s:id="{CA748838-E6D5-4BAD-9126-CAD10DD1B0DB}"
+          s:par="Background=%7BBD2F308A-E00A-4372-ADBB-BD64712A54FA%7D"
+          s:ph="/ph2/footer/section/col-narrow-4" />
         <r
           uid="{7AB31CB1-C40C-4315-903D-769B39507527}"
           p:after="*[1=2]"

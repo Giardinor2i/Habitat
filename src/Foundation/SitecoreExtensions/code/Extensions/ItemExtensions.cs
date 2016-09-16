@@ -17,6 +17,7 @@
     using Sitecore.Resources.Media;
     using Sitecore.Sites;
     using Sitecore.Xml.Xsl;
+    using Sitecore.Web;
 
     public static class ItemExtensions
     {
@@ -196,19 +197,39 @@
             return false;
         }
 
-        private static Guid FxmPlaceholder = new Guid("{10E23679-55DB-4059-B8F2-E417A2F78FCB}");
+        public static SiteInfo GetSite(this Item item)
+        {
+            var siteInfoList = Sitecore.Configuration.Factory.GetSiteInfoList();
+
+            SiteInfo currentSiteinfo = null;
+            var matchLength = 0;
+            foreach (var siteInfo in siteInfoList)
+            {
+                if (item.Paths.FullPath.StartsWith(siteInfo.RootPath, StringComparison.OrdinalIgnoreCase) && siteInfo.RootPath.Length > matchLength)
+                {
+                    matchLength = siteInfo.RootPath.Length;
+                    currentSiteinfo = siteInfo;
+                }
+            }
+
+            return currentSiteinfo;
+        }
+
+        #region Private
+
+        private static ID FxmPlaceholderID = new ID("{10E23679-55DB-4059-B8F2-E417A2F78FCB}");
 
         private static bool IsFxmPlaceholder(Item element)
         {
             if (element == null)
                 return false;
 
-            if (element.TemplateID == new ID(FxmPlaceholder))
+            if (element.TemplateID == FxmPlaceholderID)
                 return true;
 
             return false;
         }
 
-      
+        #endregion
     }
 }

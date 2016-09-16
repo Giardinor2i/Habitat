@@ -213,6 +213,10 @@
       <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
       <Name>Sitecore.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Fxm\code\Sitecore.Feature.Fxm.csproj">
+      <Project>{c8661bf5-8ab5-4088-b369-30759c004408}</Project>
+      <Name>Sitecore.Feature.Fxm</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

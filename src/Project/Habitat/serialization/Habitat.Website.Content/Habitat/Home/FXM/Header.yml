@@ -72,6 +72,13 @@ SharedFields:
           s:id="{2695013C-DD51-410B-9983-F271F16C727D}"
           s:ph="navbar-activity" />
         <r
+          uid="{4091A48D-8864-452E-B5AC-F76A8D5A1DAD}"
+          p:after="r[@uid='{AA2CAB02-C39C-4087-A240-F344E9B63038}']"
+          s:ds=""
+          s:id="{28BD7068-7FF6-4CE6-98E6-85CFE9967E14}"
+          s:par=""
+          s:ph="navbar-activity" />
+        <r
           uid="{16674C4B-F601-43F1-BFD4-FAB06A5808A8}"
           p:after="*[1=2]"
           s:ds="{9AA07D42-E9B5-4B52-A0E2-4FDF08C203EE}"
