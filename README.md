@@ -1,10 +1,17 @@
 Habitat for FXM
 
-This fork of Habitat demonstrates various techniques that can be used to extend and simplify Sitecore's FXM capability:
-
-* Placeholder Rendering Extension - A rendering that can be used from a FXM placeholder to render an item that itself has a layout and contains multiple renderings with nested placeholders.
-* Prepend CSS Selector Transform - A transform that can be used from the FXM bundling pipeline to prepend a unique selector to all style rules in a bundle, thus preventing collisions with the host site's native stlyes.
-* JavaScript Event Handlers - JavaScript event handlers that are normally initialized via the document ready event are extended to accomodate the FXM beacon's ready event.
-* Item Urls - The Url method of the ItemExtension class is enhanced to provide the correct options to the LinkManager when the item is rendering in the context of an FXM placeholder.
-* Static Assets - Additions to the system.webServer configuration element allow static assets (e.g. fonts) to be accessible from the host site by adding CORS headers and mime type mappings.
+FXM can be used to deploy a range of capabilities to external sites, from simple analytics tracking to complex federated experiences.  Federating Sitecore content on an external site is a relatively straight forward task if the requirements are limited to the following:
+<ul>
+    <li>Deploy one or more controls that don't specify placeholders</li>
+    <li>The controls to be deployed inherit the styles and behaviors of the external site</li>
+</ul>
+On the other hand, if the requirement is to federate one or more controls that do specify placeholders (i.e from a page layout) and that also have their own CSS and JavaScript the challenges become apparent quickly:
+<ul>
+    <li><b>Controls that reference placeholders</b></li>
+    <li><b>Isolating styles required by federated content from those of the host site</b></li>
+    <li><b>Attaching event handlers to document elements loaded by FXM</b></li>
+    <li><b>Varying a control's behavior when it's running in FXM</b></li>
+    <li><b>Browser cross origin request sharing for static assets (e.g. fonts)</b></li>
+</ul>
+To explain these challenges and some possible solutions this fork demonstrate how to federate the header from the Sitecore <a href="https://github.com/Sitecore/Habitat">Habitat</a> demo site.  I've also <a href="http://timbarreto.net/2016/09/17/fxm-exp/">blogged</a> in detail about how these changes work.
 
