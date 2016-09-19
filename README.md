@@ -13,5 +13,5 @@ On the other hand, if the requirement is to federate one or more controls that d
     <li><b>Varying a control's behavior when it's running in FXM</b></li>
     <li><b>Browser cross origin request sharing for static assets (e.g. fonts)</b></li>
 </ul>
-To explain these challenges and some possible solutions this fork demonstrate how to federate the header from the Sitecore <a href="https://github.com/Sitecore/Habitat">Habitat</a> demo site.  I've also <a href="http://timbarreto.net/2016/09/17/fxm-exp/">blogged</a> in detail about how these changes work.
+To illustrate some possible solutions to these challenges this fork federates the header and footer from the Habitat site.  I've also written a blog <a href="http://timbarreto.net/2016/09/17/fxm-exp/">post</a> that explains in detail the changes in this fork.
 
